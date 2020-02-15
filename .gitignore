@@ -1,0 +1,8 @@
+/*
+!/buildSrc
+!/app
+!.gitignore
+!build.gradle.kts
+!README.md
+!settings.gradle.kts
+!/gradle.properties
