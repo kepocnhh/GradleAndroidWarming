@@ -3,3 +3,4 @@
 !.gitignore
 !build.gradle.kts
 !proguard-rules.pro
+!google-services.json

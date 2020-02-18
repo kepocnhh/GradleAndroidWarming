@@ -20,6 +20,18 @@ data class Dependency(
             version = Version.Android.toolsBuildGradle
         )
 
+        val googleMobileServices = Dependency(
+            group = "$googleGroup.gms",
+            name = "google-services",
+            version = Version.Google.mobileServices
+        )
+
+        val fabricToolsGradle = Dependency(
+            group = "$fabricGroup.tools",
+            name = "gradle",
+            version = Version.Fabric.toolsGradle
+        )
+
         val kotlinGradlePlugin = Dependency(
             group = kotlinGroup,
             name = "kotlin-gradle-plugin",
@@ -56,6 +68,16 @@ data class Plugin(
         val kotlinAndroid = Plugin(
             name = "kotlin-android",
             version = Version.kotlin
+        )
+
+        val fabric = Plugin(
+            name = fabricGroup,
+            version = Version.Fabric.toolsGradle
+        )
+
+        val googleMobileServices = Plugin(
+            name = "$googleGroup.gms.google-services",
+            version = Version.Google.mobileServices
         )
     }
 }
