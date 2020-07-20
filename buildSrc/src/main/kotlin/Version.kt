@@ -4,7 +4,7 @@ object Version {
     object Android {
         const val toolsBuildGradle = "4.0.0"
         const val compileSdk = 28
-        const val buildTools = "29.0.2"
+        const val buildTools = "29.0.3"
         const val minSdk = 16
         const val targetSdk = 28
     }
