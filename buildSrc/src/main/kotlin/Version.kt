@@ -1,5 +1,5 @@
 object Version {
-    const val kotlin = "1.3.61"
+    const val kotlin = "1.3.70"
 
     object Android {
         const val toolsBuildGradle = "3.5.2"
