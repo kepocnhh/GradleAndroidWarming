@@ -1,8 +1,6 @@
 package gradle.android.warming
 
 import androidx.multidex.MultiDexApplication
-import com.crashlytics.android.Crashlytics
-import io.fabric.sdk.android.Fabric
 
 class App: MultiDexApplication() {
 
@@ -14,6 +12,5 @@ class App: MultiDexApplication() {
             //todo
             defaultExceptionHandler.uncaughtException(thread, throwable)
         }
-        Fabric.with(this, Crashlytics())
     }
 }

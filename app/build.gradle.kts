@@ -1,9 +1,7 @@
 plugins {
     applyAll(
         Plugin.androidApplication,
-        Plugin.kotlinAndroid,
-        Plugin.googleMobileServices,
-        Plugin.fabric
+        Plugin.kotlinAndroid
     )
 }
 
@@ -45,12 +43,6 @@ android {
             applicationIdSuffix = ""
             versionNameSuffix = ""
             manifestPlaceholders["appNameSuffix"] = ""
-            setProguardFiles(
-                listOf(
-                    "proguard-android.txt",
-                    "proguard-rules.pro"
-                )
-            )
         }
     }
 
@@ -67,17 +59,5 @@ android {
 }
 
 dependencies {
-    implementation("com.crashlytics.sdk.android:crashlytics:2.10.1@aar") {
-        isTransitive = true
-    }
-
-    implementation("com.google.android.material:material:1.0.0")
-
-    implementation("com.google.firebase:firebase-messaging:20.1.0")
-
-    implementation("com.yandex.android:mapkit:3.4.0") {
-        exclude(group = "com.android.support")
-    }
-
     implementation(Dependency.kotlinStdlib)
 }

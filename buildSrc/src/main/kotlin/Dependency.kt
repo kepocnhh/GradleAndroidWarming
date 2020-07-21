@@ -1,6 +1,4 @@
 private const val androidGroup = "com.android"
-private const val googleGroup = "com.google"
-private const val fabricGroup = "io.fabric"
 private const val jetbrainsGroup = "org.jetbrains"
 private const val kotlinGroup = "$jetbrainsGroup.kotlin"
 
@@ -18,18 +16,6 @@ data class Dependency(
             group = "$androidGroup.tools.build",
             name = "gradle",
             version = Version.Android.toolsBuildGradle
-        )
-
-        val googleMobileServices = Dependency(
-            group = "$googleGroup.gms",
-            name = "google-services",
-            version = Version.Google.mobileServices
-        )
-
-        val fabricToolsGradle = Dependency(
-            group = "$fabricGroup.tools",
-            name = "gradle",
-            version = Version.Fabric.toolsGradle
         )
 
         val kotlinGradlePlugin = Dependency(
@@ -68,16 +54,6 @@ data class Plugin(
         val kotlinAndroid = Plugin(
             name = "kotlin-android",
             version = Version.kotlin
-        )
-
-        val fabric = Plugin(
-            name = fabricGroup,
-            version = Version.Fabric.toolsGradle
-        )
-
-        val googleMobileServices = Plugin(
-            name = "$googleGroup.gms.google-services",
-            version = Version.Google.mobileServices
         )
     }
 }

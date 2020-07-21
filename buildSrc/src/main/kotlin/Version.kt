@@ -13,12 +13,4 @@ object Version {
         const val code = 1
         const val name = "0.0.1"
     }
-
-    object Google {
-        const val mobileServices = "4.3.3"
-    }
-
-    object Fabric {
-        const val toolsGradle = "1.31.2"
-    }
 }
